@@ -1,9 +1,6 @@
 <?php
 namespace Iwanli\Wxxcx;
 
-
-use Ixudra\Curl\Facades\Curl;
-
 class Wxxcx
 {
     /**

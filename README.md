@@ -15,13 +15,13 @@
 **PHP < 7.1**
 
 ```bash
-composer require iwanli/wxxcx=1.*
+composer require ygmt/wxxcx=1.*
 ```
 
 **PHP > 7.1**
 
 ```bash
-composer require iwanli/wxxcx=2.*
+composer require ygmt/wxxcx=2.*
 ```
 
 或者添加如下信息到你的 `composer.json` 文件中 :
@@ -29,19 +29,19 @@ composer require iwanli/wxxcx=2.*
 **PHP < 7.1**
 
 ```json
-"iwanli/wxxcx": "^1.0"
+"ygmt/wxxcx": "^1.0"
 ```
 
 **PHP > 7.1**
 
 ```bash
-"iwanli/wxxcx": "^2.0"
+"ygmt/wxxcx": "^2.0"
 ```
 
 然后注册服务提供者到 Laravel中 具体位置：`/config/app.php` 中的 `providers` 数组:
 
 ```php
-Iwanli\Wxxcx\WxxcxServiceProvider::class,
+ygmt\Wxxcx\WxxcxServiceProvider::class,
 ```
 发布配置文件: 
 
@@ -57,7 +57,7 @@ php artisan vendor:publish --tag=wxxcx
 ```php
 ...
 
-use Iwanli\Wxxcx\Wxxcx;
+use ygmt\Wxxcx\Wxxcx;
 
 class WxxcxController extends Controller
 {
